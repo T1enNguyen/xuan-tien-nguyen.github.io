@@ -46,7 +46,7 @@ description: >-
   Architecting the future through Machine Learning, Neural Networks, and Generative AI.
   Exploring the intersection of LLMs and Software Engineering.
 
-baseurl: "/xuan-tien-nguyen.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://t1ennguyen.github.io" # the base hostname & protocol for your site, e.g. 
 favicon: "/assets/images/profile.png" # the favicon for your site
 
