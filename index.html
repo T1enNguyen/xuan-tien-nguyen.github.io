@@ -1,0 +1,201 @@
+---
+layout: about
+sidebar: []
+---
+<style>
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content a {
+        color: #0ea5e9;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    .profile-image-container {
+        flex-basis: 300px;
+        flex-shrink: 0;
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 900px) {
+        .hero-section {
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #111;
+    }
+
+    .philosophy-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    .tech-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .tech-pill {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 0.6rem 1.2rem;
+        border-radius: 50px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #0f172a;
+        transition: all 0.2s;
+    }
+
+    .tech-pill:hover {
+        border-color: #0ea5e9;
+        background: #f0f9ff;
+    }
+
+    .contact-links {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: #334155;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: color 0.2s;
+    }
+
+    .contact-link:hover {
+        color: #0ea5e9;
+    }
+
+    .quote-container {
+        margin-top: 5rem;
+        padding: 2rem;
+        background: #fdfdfd;
+        border-left: 5px solid #0ea5e9;
+    }
+</style>
+
+
+
+<div class="about-container">
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p>
+                I’m <strong>Xuan Tien Nguyen</strong>, an AI Engineer and researcher dedicated to building intelligent
+                systems that solve complex real-world problems.
+            </p>
+            <p>
+                My core expertise lies in developing <strong>Large Language Models (LLMs)</strong> and production-grade
+                <strong>Computer Vision</strong> systems. I focus on bridging the gap between cutting-edge research and
+                scalable, practical implementations.
+            </p>
+            <p>
+                Currently, I am exploring the frontiers of <strong>MLOps</strong> and building robust pipelines for
+                model training and deployment. This digital garden is where I document my research, experiments, and
+                technical deep-dives into the ever-evolving AI landscape.
+            </p>
+            <p>
+                I believe in the power of open knowledge. You can browse my collection of research notes and experiments
+                in my <a href="/study-blog/">Study Blog</a>.
+            </p>
+        </div>
+        <div class="profile-image-container">
+            <img src="/assets/images/profile.png" alt="Xuan Tien Nguyen Profile" class="profile-image">
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h2 class="section-title">🧠 My AI Philosophy</h2>
+        <div class="philosophy-text">
+            <p>
+                I believe that the future of AI lies at the intersection of <strong>accessibility and ethics</strong>.
+                As systems become more powerful, the responsibility to build transparent, fair, and secure models grows
+                exponentially. My work is guided by the principle that AI should be a tool that augments human
+                capability rather than replacing it.
+            </p>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h2 class="section-title">🛠️ AI Tech Stack</h2>
+        <div class="tech-pills">
+            <div class="tech-pill">PyTorch & TensorFlow</div>
+            <div class="tech-pill">Hugging Face Ecosystem</div>
+            <div class="tech-pill">LangChain & RAG</div>
+            <div class="tech-pill">Computer Vision (YOLO, DETR)</div>
+            <div class="tech-pill">Python & C++</div>
+            <div class="tech-pill">AWS SageMaker</div>
+            <div class="tech-pill">Docker & MLOps</div>
+            <div class="tech-pill">SQL & Vector DBs</div>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h2 class="section-title">📫 Get In Touch</h2>
+        <div class="contact-links">
+            <a href="mailto:ngxuantien0909@gmail.com" class="contact-link">
+                <i class="fa-solid fa-envelope"></i> <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/ngxuantien0909" class="contact-link">
+                <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/ngxuantien0909" class="contact-link">
+                <i class="fa-brands fa-github"></i> <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="quote-container">
+        <blockquote style="font-style: italic; color: #555; font-size: 1.1rem; margin: 0;">
+            "The question of whether machines can think is about as relevant as the question of whether submarines can
+            swim." — Edsger W. Dijkstra
+        </blockquote>
+    </div>
+
+</div>
