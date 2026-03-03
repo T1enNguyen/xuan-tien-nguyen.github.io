@@ -47,7 +47,7 @@ description: >-
   Exploring the intersection of LLMs and Software Engineering.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://your-github-username.github.io" # the base hostname & protocol for your site, e.g. https://thinh-vu.github.io
+url: "https://t1ennguyen.github.io/xuan-tien-nguyen.github.io/" # the base hostname & protocol for your site, e.g. 
 favicon: "/assets/images/profile.png" # the favicon for your site
 
 # Yat date format
